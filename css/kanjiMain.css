@@ -4,10 +4,11 @@
 	--colorTextoResaltado: white;
 	--colorTextoClaro: #bfbfbf;
 	--colorTextoGeneral: #808080;
+	--ColorFondo: #2e2e2e;
 }
 
 body{
-	background-color:#2e2e2e;
+	background-color: var(--ColorFondo);
 }
 
 .alineacion{
@@ -66,14 +67,31 @@ button:active {
 	margin-top: 11px;
 }
 
+.mostradorDeKanji{
+	z-index: 0;
+	background-color: black;
+}
+
+#pressAlert{
+	z-index: 1
+	width: 100%;
+	margin-top: 100px;
+	font-family: var(--textoSecundario);
+	color: var(--colorTextoClaro);
+}
+
 #random-kanji{
+	margin-top: -115px;
+	z-index: 2;
 	font-size: calc(6em + 6vw);
 	color:transparent;
 	font-family: var(--textoPrincipal);
 	display: block;
+	position: relative;
 }
-#random-kanji:hover {
+#random-kanji:active {
 	color:var(--colorTextoResaltado);
+	background-color: var(--ColorFondo);
 }
 
 footer {
@@ -87,16 +105,6 @@ footer {
 	margin-bottom: 20px;
 	width: 100%;
 }
-.infoLink{
-	text-decoration: none;
-	color: var(--colorTextoResaltado);
-	transition: letter-spacing 0.2s, text-shadow 0.2s; 
-}
-.infoLink:hover{
-	letter-spacing: 2px;
-	text-shadow: 0 0 15px var(--colorTextoResaltado);
-	transition: letter-spacing 0.2s, text-shadow 0.2s; 
-}
 
 input[type="number"]{
 	background-color: transparent;
@@ -106,6 +114,24 @@ input[type="number"]{
 	width: 50pt;
 	-webkit-appearance: none;
 	-moz-appearance: textfield;
+}
+
+.infoLink{
+	text-decoration: none;
+	transition: letter-spacing 0.2s, text-shadow 0.2s; 
+}
+.infoLink:hover{
+	letter-spacing: 2px;
+	text-shadow: 0 0 15px var(--colorTextoResaltado);
+	transition: letter-spacing 0.2s, text-shadow 0.2s; 
+}
+.whatIsThis{
+	border: 1px solid var(--colorTextoGeneral);
+	border-radius: 3px;
+	width: 265px;
+	height: 20px;
+	margin: 0 auto;
+	color: var(--colorTextoResaltado);
 }
 
 .info{
@@ -189,6 +215,18 @@ input[type="number"]{
 
 	#random-significado{
 		font-size: calc(2em + 5vw);
+	}
+
+	#random-kanji{
+		margin-top: -85px;
+	}
+	#random-kanji:hover {
+	color:var(--colorTextoResaltado);
+	background-color: var(--ColorFondo);
+}
+
+	#pressAlert{
+		margin-top: 70px;
 	}
 
 	.info{
