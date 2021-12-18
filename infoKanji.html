@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>¿Qué es esto?</title>
+	<link rel="icon" href="./favicon.png">
+	<LINK rel=StyleSheet HREF="./css/kanjiMain.css" TYPE="text/css" MEDIA=screen>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Nunito+Sans&family=Raleway:wght@300&display=swap" rel="stylesheet"> 
+	<meta name="robots" content="noindex"/>
+</head>
+<body>
+	
+
+	<article class="info">
+		<h1 class="titulos">¿Qué es esto?</h1>
+		<p> Esta herramienta tiene el propósito de facilitar el aprendizaje de los kanji japoneses a través de la repetición aleatoria de su significado. </p>
+		<p> Diseñada con base en la 2° edicion de Kanji para recordar de James W. Heisig. </p>
+		<p> Hasta ahora el número de palabras añadidas es de 500. </p>
+		
+		<h2 class="titulos">Instrucciones</h2>
+		<p> Presione "PALABRA CLAVE ALEATORIA" para cambiar la palabra clave. </p>
+
+		<p> Todas las palabras están numeradas del 1 al 500. Por defecto, se mostrarán aleatoriamente todas las palabras en ese intervalo, pero puede elegir el rango que usted desee en los cuadrados similares a estos:</p>
+		<p>
+			<label for="Rango">
+			Min <input type="number" min="1" max="500" value="1">
+			&nbsp - &nbsp
+			<input type="number" min="1" max="500" value="500"> Max
+			</label>
+		</p>
+		<p> Donde Min es el número mínimo y Max el número máximo. Min no debe ser mayor a Max, Min no debe ser menor a 1, y Max no debe ser mayor a 500. </p>
+	
+		<h2 class="titulos">Listado de palabras</h2>
+		<p>A continuación, el listado de kanji del 1 al 500, con sus respectivos significados: </p>
+
+	</article>
+
+	<div id="Lista"></div>
+
+
+	<div class="atribucion">
+		<hr class="divisor">
+		<a href="https://iconscout.com/icons/japan" target="_blank">Japan Icon</a> on <a href="https://iconscout.com">Iconscout</a>
+	</div>
+
+	<script src="./js/listScript.js"></script>
+</body>
+</html>

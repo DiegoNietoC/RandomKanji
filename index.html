@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Random Kanji</title>
+	<link rel="icon" href="./favicon.png">
+	<LINK rel=StyleSheet HREF="./css/kanjiMain.css" TYPE="text/css" MEDIA=screen>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Nunito+Sans&family=Raleway:wght@300&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+	<container class="alineacion">
+	<container class="alineacion2">
+		<div class="Pantalla">
+			<div style="display:block; text-align: center;">
+				<p><div id="random-significado"></div></p>
+				<p><div id="random-number">si</div></p>
+				<p><div style="text-align: center; width: 100%;"><button id="botonGenerador" type="button">PALABRA CLAVE ALEATORIA</button></div></p>
+				<p><div id="random-kanji"></div></p>
+			</div>
+		</div>	
+	</container>
+	</container>
+
+
+
+	<footer>
+		<p>
+			<label for="Rango">
+			Min <input type="number" id="Min_" name="Rango" min="1" max="500" value="1">
+			&nbsp - &nbsp
+			<input type="number" id="Max_" name="Rango" min="1" max="500" value="500"> Max
+			</label>
+		</p>
+		<a href="infoKanji.html" class="infoLink"> // ¿Qué es esto? // </a>
+		<!--Presione "PALABRA CLAVE ALEATORIA" para cambiar la palabra clave.<br>
+		Luego, pase el cursor por encima del gran espacio vacío para revelar el kanji.<br>
+		Palabras añadidas: 500. Basado en la 2° edicion de Kanji para recordar de James W. Heisig.	-->
+	</footer>
+
+	<script src="./js/kanjiScript.js"></script>
+
+</body>
+</html>
