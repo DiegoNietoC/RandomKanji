@@ -1,11 +1,21 @@
+@font-face {
+    font-family: 'aoyagireisyosimo2';
+    src: url('./assets/aoyagireisyosimo_ttf_2_02.ttf'), format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 :root{
 	--textoPrincipal: 'Bebas Neue', cursive;
+	--textoKanji: 'aoyagireisyosimo2';
 	--textoSecundario: 'Raleway', sans-serif;
 	--colorTextoResaltado: white;
 	--colorTextoClaro: #bfbfbf;
 	--colorTextoGeneral: #808080;
 	--ColorFondo: #2e2e2e;
+
 }
+
+
 
 body{
 	background-color: var(--ColorFondo);
@@ -59,11 +69,12 @@ button{
 	display: block;
 }
 button:hover {
-	color:#7000ff;
-	border: 2px solid #7000ff;
+	color:white;
+	border: 2px solid red;
+	background-color: red;
 }
 button:active {
-	border: 1px solid #7000ff;
+	border: 1px solid black;
 	margin-top: 11px;
 }
 
@@ -85,7 +96,7 @@ button:active {
 	z-index: 2;
 	font-size: calc(6em + 6vw);
 	color:transparent;
-	font-family: var(--textoPrincipal);
+	font-family: var(--textoKanji);
 	display: block;
 	position: relative;
 }
@@ -132,6 +143,48 @@ input[type="number"]{
 	height: 22px;
 	margin: 0 auto;
 	color: var(--colorTextoResaltado);
+}
+
+.cabeceraInfo{
+	display: flex;
+	width: 75%;
+	margin-left: 130px;
+	margin-top: 30px;
+	transition: transform 0.2s, margin-left 0.2s;
+}
+
+.cabeceraInfo:hover{
+  	transform: scale(1.1);
+  	margin-left: 180px;
+  	transition: transform 0.2s, margin-left 0.2s;
+}
+
+.temploFondo{
+	width: 150px;
+	height: 150px;
+	background-color: red;
+	align-items: center;
+	text-align: center;
+	border-radius: 1000%;
+	margin-top: 10px;
+}
+
+.temploImagen{
+	width: 140px;
+	margin:0 auto;
+
+}
+
+.contenedorTituloDeInfo{
+	padding-top: 35px;
+	margin-left: 20px;
+}
+.tituloDeInfo{
+	display: inline;
+	color: var(--colorTextoResaltado);
+	font-family: var(--textoKanji);
+	padding-top: 100px;
+	font-size: calc(3em + 3vw);
 }
 
 .info{
@@ -227,6 +280,35 @@ input[type="number"]{
 
 	#pressAlert{
 		margin-top: 70px;
+	}
+
+	.cabeceraInfo{
+		display: table;
+		width: 90%;
+		margin-left: 0px;
+		text-align: center;
+		margin: 0 auto;
+		padding-top: 30px;
+		transition: transform 0.2s;
+	}
+	.cabeceraInfo:hover{
+	  	transform: scale(1.1);
+	  	margin-left: 0px;
+	  	margin: 0 auto;
+	  	transition: transform 0.2s;
+	}
+
+
+
+	.temploFondo{
+		margin: 0 auto;
+	}
+	.contenedorTituloDeInfo{
+		margin-top: -55px;
+	}
+	.tituloDeInfo{
+		font-size: calc(2em + 2vw);
+		padding-top: 0px;
 	}
 
 	.info{
